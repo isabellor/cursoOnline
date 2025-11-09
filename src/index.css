@@ -1,0 +1,31 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body con tipografía base y color de fondo general */
+body {
+  font-family: 'Arial', sans-serif; /* puedes cambiar a otra fuente fina */
+  background-color: #0f0f1a; /* fondo oscuro base para estética retro-futurista */
+  color: #ffffff; /* texto base blanco */
+}
+
+/* Opcional: scroll suave y altura mínima */
+html, body, #root {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Enlaces sin subrayado */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Botones básicos */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}

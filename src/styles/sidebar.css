@@ -1,0 +1,49 @@
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: #0f0f1a;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+   flex-shrink: 0;
+}
+
+/* Aplica color al SVG para que currentColor funcione */
+.sidebar__logo svg {
+  width: 150px;             /* igual que tu img original */
+  display: block;
+  margin: 0 auto;
+  color: #00eaff;           /* color retro-futurista cyan */
+  filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.4));
+}
+
+
+.sidebar__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar__nav li {
+  padding: 10px 12px;
+  color: #e0e6ff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.sidebar__nav li:hover {
+  background: rgba(0, 255, 255, 0.1);
+  color: #6af3ff;
+}
+.sidebar__nav li.active {
+  background: #00fff7;
+  color: #0f0f1a;
+  font-weight: bold;
+}
